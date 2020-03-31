@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
+
+.btn {
+    @apply inline-block px-5 py-3  rounded-lg shadow-lg uppercase text-white
+    tracking-wider font-semibold text-sm
+}
+.btn-blue {
+    @apply bg-blue-600
+}
+.btn-green {
+    @apply bg-green-600
+}
+.btn-blue:hover {
+    @apply bg-blue-500
+}
+.btn-green:hover {
+    @apply bg-green-500
+}
+.btn:focus {
+    @apply shadow-outline
+}
+.btn-blue:active {
+    @apply bg-blue-700
+}
+.btn-green:active {
+    @apply bg-green-700
+}
+@screen sm {
+    .btn {
+        @apply text-base
+    }
+}
+
 @tailwind utilities;
